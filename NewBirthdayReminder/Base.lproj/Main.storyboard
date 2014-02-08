@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Birthdays-->
+        <!--Home View Controller - Birthdays-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="BRViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="BRHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="596" y="156"/>
         </scene>
-        <!--View Controller - Birthday Detail-->
+        <!--Birthday Detail View Controller - Birthday Detail-->
         <scene sceneID="mcz-9W-hHZ">
             <objects>
-                <viewController id="JTS-F7-ZLX" sceneMemberID="viewController">
+                <viewController id="JTS-F7-ZLX" customClass="BRBirthdayDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHJ-vI-xIJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

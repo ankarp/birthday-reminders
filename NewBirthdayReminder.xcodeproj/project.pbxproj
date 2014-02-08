@@ -14,13 +14,14 @@
 		3B2BB33018A21304008A8F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BB32F18A21304008A8F37 /* main.m */; };
 		3B2BB33418A21304008A8F37 /* BRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BB33318A21304008A8F37 /* BRAppDelegate.m */; };
 		3B2BB33718A21304008A8F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BB33518A21304008A8F37 /* Main.storyboard */; };
-		3B2BB33A18A21304008A8F37 /* BRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BB33918A21304008A8F37 /* BRViewController.m */; };
 		3B2BB33C18A21304008A8F37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BB33B18A21304008A8F37 /* Images.xcassets */; };
 		3B2BB34318A21305008A8F37 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB34218A21305008A8F37 /* XCTest.framework */; };
 		3B2BB34418A21305008A8F37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32318A21304008A8F37 /* Foundation.framework */; };
 		3B2BB34518A21305008A8F37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32718A21304008A8F37 /* UIKit.framework */; };
 		3B2BB34D18A21305008A8F37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BB34B18A21305008A8F37 /* InfoPlist.strings */; };
 		3B2BB34F18A21305008A8F37 /* NewBirthdayReminderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BB34E18A21305008A8F37 /* NewBirthdayReminderTests.m */; };
+		3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40918A621DF00F98806 /* BRHomeViewController.m */; };
+		3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		3B2BB33218A21304008A8F37 /* BRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAppDelegate.h; sourceTree = "<group>"; };
 		3B2BB33318A21304008A8F37 /* BRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRAppDelegate.m; sourceTree = "<group>"; };
 		3B2BB33618A21304008A8F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B2BB33818A21304008A8F37 /* BRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRViewController.h; sourceTree = "<group>"; };
-		3B2BB33918A21304008A8F37 /* BRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRViewController.m; sourceTree = "<group>"; };
 		3B2BB33B18A21304008A8F37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3B2BB34118A21305008A8F37 /* NewBirthdayReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBirthdayReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2BB34218A21305008A8F37 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3B2BB34A18A21305008A8F37 /* NewBirthdayReminderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewBirthdayReminderTests-Info.plist"; sourceTree = "<group>"; };
 		3B2BB34C18A21305008A8F37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B2BB34E18A21305008A8F37 /* NewBirthdayReminderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBirthdayReminderTests.m; sourceTree = "<group>"; };
+		3B68B40818A621DF00F98806 /* BRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRHomeViewController.h; sourceTree = "<group>"; };
+		3B68B40918A621DF00F98806 /* BRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRHomeViewController.m; sourceTree = "<group>"; };
+		3B68B40B18A6221900F98806 /* BRBirthdayDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBirthdayDetailViewController.h; sourceTree = "<group>"; };
+		3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBirthdayDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,10 @@
 		3B2BB32918A21304008A8F37 /* NewBirthdayReminder */ = {
 			isa = PBXGroup;
 			children = (
+				3B68B40618A6219100F98806 /* user-interface */,
 				3B2BB33218A21304008A8F37 /* BRAppDelegate.h */,
 				3B2BB33318A21304008A8F37 /* BRAppDelegate.m */,
 				3B2BB33518A21304008A8F37 /* Main.storyboard */,
-				3B2BB33818A21304008A8F37 /* BRViewController.h */,
-				3B2BB33918A21304008A8F37 /* BRViewController.m */,
 				3B2BB33B18A21304008A8F37 /* Images.xcassets */,
 				3B2BB32A18A21304008A8F37 /* Supporting Files */,
 			);
@@ -150,6 +152,25 @@
 				3B2BB34B18A21305008A8F37 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B68B40618A6219100F98806 /* user-interface */ = {
+			isa = PBXGroup;
+			children = (
+				3B68B40718A6219100F98806 /* view-controllers */,
+			);
+			path = "user-interface";
+			sourceTree = "<group>";
+		};
+		3B68B40718A6219100F98806 /* view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B68B40818A621DF00F98806 /* BRHomeViewController.h */,
+				3B68B40918A621DF00F98806 /* BRHomeViewController.m */,
+				3B68B40B18A6221900F98806 /* BRBirthdayDetailViewController.h */,
+				3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */,
+			);
+			path = "view-controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2BB33A18A21304008A8F37 /* BRViewController.m in Sources */,
+				3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */,
+				3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */,
 				3B2BB33418A21304008A8F37 /* BRAppDelegate.m in Sources */,
 				3B2BB33018A21304008A8F37 /* main.m in Sources */,
 			);
@@ -461,6 +483,7 @@
 				3B2BB35418A21305008A8F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B2BB35518A21305008A8F37 /* Build configuration list for PBXNativeTarget "NewBirthdayReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +492,7 @@
 				3B2BB35718A21305008A8F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
