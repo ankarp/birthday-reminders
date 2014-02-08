@@ -11,13 +11,40 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HVN-pf-LJe">
+                                <rect key="frame" x="36" y="259" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push Birthday Detail View Controller">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JTS-F7-ZLX" kind="push" id="71y-ga-Sgj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Birthdays" id="e3b-KO-T3P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="156"/>
+            <point key="canvasLocation" x="596" y="156"/>
+        </scene>
+        <!--View Controller - Birthday Detail-->
+        <scene sceneID="mcz-9W-hHZ">
+            <objects>
+                <viewController id="JTS-F7-ZLX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FHJ-vI-xIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Birthday Detail" id="51t-RW-ogR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y8-ce-vgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lPr-Pa-wM4">
