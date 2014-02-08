@@ -25,7 +25,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Birthdays" id="e3b-KO-T3P"/>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eqr-CT-8Zb"/>
+                        <barButtonItem title="Address Book" id="bLo-kT-iyp"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="EwK-Eh-45k"/>
+                        <barButtonItem title="Facebook" id="kcn-O4-nkC"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="QK1-CW-rt8"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Birthdays" id="e3b-KO-T3P">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="8O0-os-g9m"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="lHh-tS-zkW"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +44,7 @@
         <!--Birthday Detail View Controller - Birthday Detail-->
         <scene sceneID="mcz-9W-hHZ">
             <objects>
-                <viewController id="JTS-F7-ZLX" customClass="BRBirthdayDetailViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="JTS-F7-ZLX" customClass="BRBirthdayDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHJ-vI-xIJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,13 +59,17 @@
         <!--Navigation Controller-->
         <scene sceneID="lPr-Pa-wM4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eRV-SH-ggQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="eRV-SH-ggQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tn9-57-zfA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oKr-AK-Z0Q">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ZbV-rg-cyK"/>
                     </connections>
