@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1002" y="614"/>
         </scene>
-        <!--View Controller - Edit Birthday-->
+        <!--Birthday Edit View Controller - Edit Birthday-->
         <scene sceneID="3Fs-1Z-Phs">
             <objects>
-                <viewController id="Shn-4w-I3J" sceneMemberID="viewController">
+                <viewController id="Shn-4w-I3J" customClass="BRBirthdayEditViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="akm-Ti-GbJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,14 +57,13 @@
                     <navigationItem key="navigationItem" title="Edit Birthday" id="IRA-rz-NZ4">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="0eI-R0-jgl">
                             <connections>
-                                <segue destination="q0C-2R-bAg" kind="unwind" unwindAction="unwindBackToHomeViewController:" id="sQt-Gv-imt"/>
+                                <action selector="cancelAndDismiss:" destination="Shn-4w-I3J" id="LbH-FN-c52"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="OAd-Zv-EwF"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYp-RB-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="q0C-2R-bAg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2129" y="-111"/>
         </scene>
