@@ -12,6 +12,17 @@
 		3B2A05C118A8333F005DAEC2 /* icon-birthday-cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */; };
 		3B2A05C218A8333F005DAEC2 /* thumbnail-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */; };
 		3B2A05C318A8333F005DAEC2 /* thumbnail-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BF18A8333F005DAEC2 /* thumbnail-background@2x.png */; };
+		3B2A05C518A84116005DAEC2 /* birthdays.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05C418A84116005DAEC2 /* birthdays.plist */; };
+		3B2A05D118A84121005DAEC2 /* aloe-blacc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05C718A84121005DAEC2 /* aloe-blacc.jpg */; };
+		3B2A05D218A84121005DAEC2 /* angelina-jolie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05C818A84121005DAEC2 /* angelina-jolie.jpg */; };
+		3B2A05D318A84121005DAEC2 /* brad-pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05C918A84121005DAEC2 /* brad-pitt.jpg */; };
+		3B2A05D418A84121005DAEC2 /* christina-aguilera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05CA18A84121005DAEC2 /* christina-aguilera.jpg */; };
+		3B2A05D518A84121005DAEC2 /* jamie-oliver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05CB18A84121005DAEC2 /* jamie-oliver.jpg */; };
+		3B2A05D618A84121005DAEC2 /* justin-bieber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05CC18A84121005DAEC2 /* justin-bieber.jpg */; };
+		3B2A05D718A84121005DAEC2 /* katy-perry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05CD18A84121005DAEC2 /* katy-perry.jpg */; };
+		3B2A05D818A84121005DAEC2 /* olly-murs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05CE18A84121005DAEC2 /* olly-murs.jpg */; };
+		3B2A05D918A84121005DAEC2 /* russell-brand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05CF18A84121005DAEC2 /* russell-brand.jpg */; };
+		3B2A05DA18A84121005DAEC2 /* scarlett-johansson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05D018A84121005DAEC2 /* scarlett-johansson.jpg */; };
 		3B2BB32418A21304008A8F37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32318A21304008A8F37 /* Foundation.framework */; };
 		3B2BB32618A21304008A8F37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32518A21304008A8F37 /* CoreGraphics.framework */; };
 		3B2BB32818A21304008A8F37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32718A21304008A8F37 /* UIKit.framework */; };
@@ -50,6 +61,17 @@
 		3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background.png"; sourceTree = "<group>"; };
 		3B2A05BF18A8333F005DAEC2 /* thumbnail-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background@2x.png"; sourceTree = "<group>"; };
+		3B2A05C418A84116005DAEC2 /* birthdays.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = birthdays.plist; sourceTree = "<group>"; };
+		3B2A05C718A84121005DAEC2 /* aloe-blacc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aloe-blacc.jpg"; sourceTree = "<group>"; };
+		3B2A05C818A84121005DAEC2 /* angelina-jolie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "angelina-jolie.jpg"; sourceTree = "<group>"; };
+		3B2A05C918A84121005DAEC2 /* brad-pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brad-pitt.jpg"; sourceTree = "<group>"; };
+		3B2A05CA18A84121005DAEC2 /* christina-aguilera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "christina-aguilera.jpg"; sourceTree = "<group>"; };
+		3B2A05CB18A84121005DAEC2 /* jamie-oliver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jamie-oliver.jpg"; sourceTree = "<group>"; };
+		3B2A05CC18A84121005DAEC2 /* justin-bieber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "justin-bieber.jpg"; sourceTree = "<group>"; };
+		3B2A05CD18A84121005DAEC2 /* katy-perry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "katy-perry.jpg"; sourceTree = "<group>"; };
+		3B2A05CE18A84121005DAEC2 /* olly-murs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "olly-murs.jpg"; sourceTree = "<group>"; };
+		3B2A05CF18A84121005DAEC2 /* russell-brand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "russell-brand.jpg"; sourceTree = "<group>"; };
+		3B2A05D018A84121005DAEC2 /* scarlett-johansson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "scarlett-johansson.jpg"; sourceTree = "<group>"; };
 		3B2BB32018A21304008A8F37 /* NewBirthdayReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2BB32318A21304008A8F37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B2BB32518A21304008A8F37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,6 +130,7 @@
 		3B2A05BA18A8333F005DAEC2 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				3B2A05C418A84116005DAEC2 /* birthdays.plist */,
 				3B2A05BB18A8333F005DAEC2 /* images */,
 			);
 			name = resources;
@@ -117,12 +140,30 @@
 		3B2A05BB18A8333F005DAEC2 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3B2A05C618A84121005DAEC2 /* Celebrity Pics */,
 				3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */,
 				3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */,
 				3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */,
 				3B2A05BF18A8333F005DAEC2 /* thumbnail-background@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		3B2A05C618A84121005DAEC2 /* Celebrity Pics */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A05C718A84121005DAEC2 /* aloe-blacc.jpg */,
+				3B2A05C818A84121005DAEC2 /* angelina-jolie.jpg */,
+				3B2A05C918A84121005DAEC2 /* brad-pitt.jpg */,
+				3B2A05CA18A84121005DAEC2 /* christina-aguilera.jpg */,
+				3B2A05CB18A84121005DAEC2 /* jamie-oliver.jpg */,
+				3B2A05CC18A84121005DAEC2 /* justin-bieber.jpg */,
+				3B2A05CD18A84121005DAEC2 /* katy-perry.jpg */,
+				3B2A05CE18A84121005DAEC2 /* olly-murs.jpg */,
+				3B2A05CF18A84121005DAEC2 /* russell-brand.jpg */,
+				3B2A05D018A84121005DAEC2 /* scarlett-johansson.jpg */,
+			);
+			path = "Celebrity Pics";
 			sourceTree = "<group>";
 		};
 		3B2BB31718A21304008A8F37 = {
@@ -304,11 +345,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2A05D818A84121005DAEC2 /* olly-murs.jpg in Resources */,
 				3B2A05C318A8333F005DAEC2 /* thumbnail-background@2x.png in Resources */,
+				3B2A05D518A84121005DAEC2 /* jamie-oliver.jpg in Resources */,
+				3B2A05DA18A84121005DAEC2 /* scarlett-johansson.jpg in Resources */,
+				3B2A05D418A84121005DAEC2 /* christina-aguilera.jpg in Resources */,
 				3B2BB33C18A21304008A8F37 /* Images.xcassets in Resources */,
+				3B2A05D118A84121005DAEC2 /* aloe-blacc.jpg in Resources */,
+				3B2A05D618A84121005DAEC2 /* justin-bieber.jpg in Resources */,
 				3B2A05C118A8333F005DAEC2 /* icon-birthday-cake@2x.png in Resources */,
+				3B2A05D718A84121005DAEC2 /* katy-perry.jpg in Resources */,
+				3B2A05C518A84116005DAEC2 /* birthdays.plist in Resources */,
+				3B2A05D918A84121005DAEC2 /* russell-brand.jpg in Resources */,
 				3B2BB32E18A21304008A8F37 /* InfoPlist.strings in Resources */,
+				3B2A05D218A84121005DAEC2 /* angelina-jolie.jpg in Resources */,
 				3B2BB33718A21304008A8F37 /* Main.storyboard in Resources */,
+				3B2A05D318A84121005DAEC2 /* brad-pitt.jpg in Resources */,
 				3B2A05C218A8333F005DAEC2 /* thumbnail-background.png in Resources */,
 				3B2A05C018A8333F005DAEC2 /* icon-birthday-cake.png in Resources */,
 			);
