@@ -35,4 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didChangeTime:(UIDatePicker *)sender {
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:self.timePicker.date];
+
+    NSLog(@"Change time %d:%d", components.hour, components.minute);
+}
 @end

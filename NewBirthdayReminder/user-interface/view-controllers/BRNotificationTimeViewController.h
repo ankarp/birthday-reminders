@@ -10,4 +10,8 @@
 
 @interface BRNotificationTimeViewController : BRCoreViewController
 
+@property (weak, nonatomic) IBOutlet UIView *whatTimeLabel;
+@property (weak, nonatomic) IBOutlet UIDatePicker *timePicker;
+
+- (IBAction)didChangeTime:(UIDatePicker *)sender;
 @end
