@@ -78,6 +78,18 @@
                     <view key="view" contentMode="scaleToFill" id="FHJ-vI-xIJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0dI-DR-YVU">
+                                <rect key="frame" x="124" y="269" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit Notes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MaJ-DJ-eu7" kind="modal" id="VWL-re-0BI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Birthday Detail" id="51t-RW-ogR">
@@ -91,6 +103,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y8-ce-vgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1592" y="624"/>
+        </scene>
+        <!--Notes Edit View Controller - Edit Notes-->
+        <scene sceneID="NBZ-rb-C5h">
+            <objects>
+                <viewController id="DD2-Sf-DnJ" customClass="BRNotesEditViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DLX-9Q-gqA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Notes" id="F6c-jZ-Ssx">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="4ZP-1P-TXy">
+                            <connections>
+                                <action selector="cancelAndDismiss:" destination="DD2-Sf-DnJ" id="l2z-Qu-AtH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="gFD-6I-z74">
+                            <connections>
+                                <action selector="saveAndDismiss:" destination="DD2-Sf-DnJ" id="frX-wb-rCa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUG-SX-saY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2775" y="536"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qtA-0K-CPm">
@@ -128,6 +166,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWx-Ch-GZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1603" y="-111"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QV1-vq-qrE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MaJ-DJ-eu7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IEM-d2-ImM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DD2-Sf-DnJ" kind="relationship" relationship="rootViewController" id="3cB-4e-wBB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5j-IW-wYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2249" y="536"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

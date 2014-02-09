@@ -24,6 +24,7 @@
 		3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */; };
 		3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */; };
 		3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B718ED118A70293001C3E57 /* BRCoreViewController.m */; };
+		3B718ED518A70958001C3E57 /* BRNotesEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B718ED418A70958001C3E57 /* BRNotesEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBirthdayEditViewController.m; sourceTree = "<group>"; };
 		3B718ED018A70293001C3E57 /* BRCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCoreViewController.h; sourceTree = "<group>"; };
 		3B718ED118A70293001C3E57 /* BRCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreViewController.m; sourceTree = "<group>"; };
+		3B718ED318A70958001C3E57 /* BRNotesEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRNotesEditViewController.h; sourceTree = "<group>"; };
+		3B718ED418A70958001C3E57 /* BRNotesEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNotesEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				3B718ED118A70293001C3E57 /* BRCoreViewController.m */,
 				3B68B40E18A6F9D300F98806 /* BRBirthdayEditViewController.h */,
 				3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */,
+				3B718ED318A70958001C3E57 /* BRNotesEditViewController.h */,
+				3B718ED418A70958001C3E57 /* BRNotesEditViewController.m */,
 			);
 			path = "view-controllers";
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */,
 				3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */,
 				3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */,
+				3B718ED518A70958001C3E57 /* BRNotesEditViewController.m in Sources */,
 				3B2BB33418A21304008A8F37 /* BRAppDelegate.m in Sources */,
 				3B2BB33018A21304008A8F37 /* main.m in Sources */,
 			);
