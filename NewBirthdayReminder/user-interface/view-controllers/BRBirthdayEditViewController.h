@@ -19,5 +19,8 @@
 - (IBAction)didChangeNameText:(UITextField *)sender;
 - (IBAction)didToggleSwitch:(UISwitch *)sender;
 - (IBAction)didChangeDatePicker:(UIDatePicker *)sender;
+@property (weak, nonatomic) IBOutlet UIView *phtoContainerView;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
+@property (weak, nonatomic) IBOutlet UILabel *picPhotoLabel;
 
 @end

@@ -125,13 +125,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbnail-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="t4u-lZ-Ut6">
-                                        <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                        <rect key="frame" x="0.0" y="-3" width="71" height="71"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-birthday-cake.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vw4-UW-fqW">
                                         <rect key="frame" x="0.0" y="15" width="71" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photo Pic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-FD-ORl">
+                                        <rect key="frame" x="0.0" y="47" width="71" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -166,6 +174,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="includeYearLabel" destination="0QK-6H-ymM" id="fIw-zI-gVX"/>
                         <outlet property="includeYearSwitch" destination="4vT-TU-YJr" id="Jlj-wO-u72"/>
                         <outlet property="nameTextField" destination="hUh-i0-v4S" id="XnT-mN-Hmv"/>
+                        <outlet property="photoView" destination="Vw4-UW-fqW" id="9gT-yp-eaB"/>
+                        <outlet property="phtoContainerView" destination="p7P-1n-K5W" id="LMi-dA-znu"/>
+                        <outlet property="picPhotoLabel" destination="HcX-FD-ORl" id="YPH-8l-8hd"/>
                         <outlet property="saveButton" destination="OAd-Zv-EwF" id="Mbc-XI-NBG"/>
                     </connections>
                 </viewController>
