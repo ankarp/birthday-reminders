@@ -142,9 +142,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0fq-Fx-h4p" appends="YES" id="l2K-et-e1J"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="4vT-TU-YJr" firstAttribute="leading" secondItem="0QK-6H-ymM" secondAttribute="trailing" constant="8" id="3s4-ET-sFa"/>
                             <constraint firstItem="4vT-TU-YJr" firstAttribute="leading" secondItem="0QK-6H-ymM" secondAttribute="trailing" constant="8" id="7ft-dn-NKD"/>
@@ -181,6 +186,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYp-RB-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0fq-Fx-h4p">
+                    <connections>
+                        <action selector="didTapPhoto:" destination="Shn-4w-I3J" id="NgR-oW-tXt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2127" y="-235"/>
         </scene>

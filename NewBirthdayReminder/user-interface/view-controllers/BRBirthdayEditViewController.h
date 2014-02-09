@@ -22,5 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIView *phtoContainerView;
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 @property (weak, nonatomic) IBOutlet UILabel *picPhotoLabel;
+- (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender;
 
 @end

@@ -70,4 +70,8 @@
 - (IBAction)didChangeDatePicker:(UIDatePicker *)sender {
     NSLog(@"New Birthdate selected: %@", self.datePicker.date);
 }
+
+- (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender {
+    NSLog(@"Did Tap Photo!");
+}
 @end
