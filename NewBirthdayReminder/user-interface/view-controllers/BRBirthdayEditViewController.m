@@ -35,4 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.nameTextField resignFirstResponder];
+    return NO;
+}
+
 @end
