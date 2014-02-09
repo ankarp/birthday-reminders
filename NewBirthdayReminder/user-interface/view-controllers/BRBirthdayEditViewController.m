@@ -73,5 +73,12 @@
 
 - (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender {
     NSLog(@"Did Tap Photo!");
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        NSLog(@"No camera detected!");
+        return;
+    }
+
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take a Photo", @"Pick from Photo Library", nil];
+    [actionSheet showInView:self.view];
 }
 @end

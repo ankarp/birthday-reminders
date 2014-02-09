@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BRCoreViewController.h"
 
-@interface BRBirthdayEditViewController : BRCoreViewController<UITextFieldDelegate>
+@interface BRBirthdayEditViewController : BRCoreViewController<UITextFieldDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
