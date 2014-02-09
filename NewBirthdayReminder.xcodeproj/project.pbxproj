@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */; };
+		3B2A05C018A8333F005DAEC2 /* icon-birthday-cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */; };
+		3B2A05C118A8333F005DAEC2 /* icon-birthday-cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */; };
+		3B2A05C218A8333F005DAEC2 /* thumbnail-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */; };
+		3B2A05C318A8333F005DAEC2 /* thumbnail-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BF18A8333F005DAEC2 /* thumbnail-background@2x.png */; };
 		3B2BB32418A21304008A8F37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32318A21304008A8F37 /* Foundation.framework */; };
 		3B2BB32618A21304008A8F37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32518A21304008A8F37 /* CoreGraphics.framework */; };
 		3B2BB32818A21304008A8F37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32718A21304008A8F37 /* UIKit.framework */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		3B062E6718A70BDC00248F4F /* BRSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingsViewController.h; sourceTree = "<group>"; };
 		3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingsViewController.m; sourceTree = "<group>"; };
+		3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake.png"; sourceTree = "<group>"; };
+		3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake@2x.png"; sourceTree = "<group>"; };
+		3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background.png"; sourceTree = "<group>"; };
+		3B2A05BF18A8333F005DAEC2 /* thumbnail-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background@2x.png"; sourceTree = "<group>"; };
 		3B2BB32018A21304008A8F37 /* NewBirthdayReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2BB32318A21304008A8F37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B2BB32518A21304008A8F37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,9 +105,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B2A05BA18A8333F005DAEC2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A05BB18A8333F005DAEC2 /* images */,
+			);
+			name = resources;
+			path = NewBirthdayReminder/resources;
+			sourceTree = "<group>";
+		};
+		3B2A05BB18A8333F005DAEC2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */,
+				3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */,
+				3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */,
+				3B2A05BF18A8333F005DAEC2 /* thumbnail-background@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		3B2BB31718A21304008A8F37 = {
 			isa = PBXGroup;
 			children = (
+				3B2A05BA18A8333F005DAEC2 /* resources */,
 				3B2BB32918A21304008A8F37 /* NewBirthdayReminder */,
 				3B2BB34818A21305008A8F37 /* NewBirthdayReminderTests */,
 				3B2BB32218A21304008A8F37 /* Frameworks */,
@@ -275,9 +304,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2A05C318A8333F005DAEC2 /* thumbnail-background@2x.png in Resources */,
 				3B2BB33C18A21304008A8F37 /* Images.xcassets in Resources */,
+				3B2A05C118A8333F005DAEC2 /* icon-birthday-cake@2x.png in Resources */,
 				3B2BB32E18A21304008A8F37 /* InfoPlist.strings in Resources */,
 				3B2BB33718A21304008A8F37 /* Main.storyboard in Resources */,
+				3B2A05C218A8333F005DAEC2 /* thumbnail-background.png in Resources */,
+				3B2A05C018A8333F005DAEC2 /* icon-birthday-cake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
