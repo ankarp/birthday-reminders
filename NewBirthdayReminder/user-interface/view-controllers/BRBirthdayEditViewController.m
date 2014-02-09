@@ -35,6 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self updateSaveButton];
+    
+}
+
+-(void) updateSaveButton
+{
+    self.saveButton.enabled = self.nameTextField.text.length > 0;
+}
+
 #pragma mark UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -44,5 +56,6 @@
 
 - (IBAction)didChangeNameText:(UITextField *)sender {
     NSLog(@"The text was changed: %@", self.nameTextField.text);
+    [self updateSaveButton];
 }
 @end
