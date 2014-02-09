@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *includeYearLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *includeYearSwitch;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+- (IBAction)didChangeNameText:(UITextField *)sender;
 
 @end

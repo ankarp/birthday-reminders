@@ -42,4 +42,7 @@
     return NO;
 }
 
+- (IBAction)didChangeNameText:(UITextField *)sender {
+    NSLog(@"The text was changed: %@", self.nameTextField.text);
+}
 @end

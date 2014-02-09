@@ -71,6 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="didChangeNameText:" destination="Shn-4w-I3J" eventType="editingChanged" id="mF1-xc-0ss"/>
                                     <outlet property="delegate" destination="Shn-4w-I3J" id="W0r-54-hS2"/>
                                 </connections>
                             </textField>
