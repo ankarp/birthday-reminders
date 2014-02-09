@@ -21,6 +21,7 @@
 		3B2BB34518A21305008A8F37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32718A21304008A8F37 /* UIKit.framework */; };
 		3B2BB34D18A21305008A8F37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BB34B18A21305008A8F37 /* InfoPlist.strings */; };
 		3B2BB34F18A21305008A8F37 /* NewBirthdayReminderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BB34E18A21305008A8F37 /* NewBirthdayReminderTests.m */; };
+		3B34C6C018A724AD004EA46A /* BRNotificationTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B34C6BF18A724AD004EA46A /* BRNotificationTimeViewController.m */; };
 		3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40918A621DF00F98806 /* BRHomeViewController.m */; };
 		3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */; };
 		3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */; };
@@ -58,6 +59,8 @@
 		3B2BB34A18A21305008A8F37 /* NewBirthdayReminderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewBirthdayReminderTests-Info.plist"; sourceTree = "<group>"; };
 		3B2BB34C18A21305008A8F37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B2BB34E18A21305008A8F37 /* NewBirthdayReminderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBirthdayReminderTests.m; sourceTree = "<group>"; };
+		3B34C6BE18A724AD004EA46A /* BRNotificationTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRNotificationTimeViewController.h; sourceTree = "<group>"; };
+		3B34C6BF18A724AD004EA46A /* BRNotificationTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNotificationTimeViewController.m; sourceTree = "<group>"; };
 		3B68B40818A621DF00F98806 /* BRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRHomeViewController.h; sourceTree = "<group>"; };
 		3B68B40918A621DF00F98806 /* BRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRHomeViewController.m; sourceTree = "<group>"; };
 		3B68B40B18A6221900F98806 /* BRBirthdayDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBirthdayDetailViewController.h; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				3B718ED418A70958001C3E57 /* BRNotesEditViewController.m */,
 				3B062E6718A70BDC00248F4F /* BRSettingsViewController.h */,
 				3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */,
+				3B34C6BE18A724AD004EA46A /* BRNotificationTimeViewController.h */,
+				3B34C6BF18A724AD004EA46A /* BRNotificationTimeViewController.m */,
 			);
 			path = "view-controllers";
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			files = (
 				3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */,
 				3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */,
+				3B34C6C018A724AD004EA46A /* BRNotificationTimeViewController.m in Sources */,
 				3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */,
 				3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */,
 				3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */,
