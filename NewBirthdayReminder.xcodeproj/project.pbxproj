@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */; };
 		3B2BB32418A21304008A8F37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32318A21304008A8F37 /* Foundation.framework */; };
 		3B2BB32618A21304008A8F37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32518A21304008A8F37 /* CoreGraphics.framework */; };
 		3B2BB32818A21304008A8F37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2BB32718A21304008A8F37 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B062E6718A70BDC00248F4F /* BRSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingsViewController.h; sourceTree = "<group>"; };
+		3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingsViewController.m; sourceTree = "<group>"; };
 		3B2BB32018A21304008A8F37 /* NewBirthdayReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2BB32318A21304008A8F37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B2BB32518A21304008A8F37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,6 +187,8 @@
 				3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */,
 				3B718ED318A70958001C3E57 /* BRNotesEditViewController.h */,
 				3B718ED418A70958001C3E57 /* BRNotesEditViewController.m */,
+				3B062E6718A70BDC00248F4F /* BRSettingsViewController.h */,
+				3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */,
 			);
 			path = "view-controllers";
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */,
+				3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */,
 				3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */,
 				3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */,
 				3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */,
