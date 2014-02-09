@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BRCoreViewController.h"
 
-@interface BRHomeViewController : UIViewController
+@interface BRHomeViewController : BRCoreViewController
 
 -(IBAction)unwindBackToHomeViewController:(UIStoryboardSegue *)segue;
 

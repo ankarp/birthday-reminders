@@ -60,7 +60,11 @@
                                 <action selector="cancelAndDismiss:" destination="Shn-4w-I3J" id="LbH-FN-c52"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="OAd-Zv-EwF"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="OAd-Zv-EwF">
+                            <connections>
+                                <action selector="saveAndDismiss:" destination="Shn-4w-I3J" id="tbV-5l-iso"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYp-RB-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -76,7 +80,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Birthday Detail" id="51t-RW-ogR"/>
+                    <navigationItem key="navigationItem" title="Birthday Detail" id="51t-RW-ogR">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="213-9t-shR">
+                            <connections>
+                                <segue destination="ipX-L2-sVs" kind="modal" id="OtV-ox-oRc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y8-ce-vgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,4 +135,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="OtV-ox-oRc"/>
+    </inferredMetricsTieBreakers>
 </document>

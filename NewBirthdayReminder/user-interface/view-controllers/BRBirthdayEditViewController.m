@@ -35,12 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)cancelAndDismiss:(UIBarButtonItem *)sender {
-    NSLog(@"Cancel!");
-    [self dismissViewControllerAnimated:YES completion:^{
-        // any code we place inside this block will
-        // run once the view controller has been dismissed
-        NSLog(@"Dismiss complete!");
-    }];
-}
 @end

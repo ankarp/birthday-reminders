@@ -23,6 +23,7 @@
 		3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40918A621DF00F98806 /* BRHomeViewController.m */; };
 		3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */; };
 		3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */; };
+		3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B718ED118A70293001C3E57 /* BRCoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,10 @@
 		3B68B40918A621DF00F98806 /* BRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRHomeViewController.m; sourceTree = "<group>"; };
 		3B68B40B18A6221900F98806 /* BRBirthdayDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBirthdayDetailViewController.h; sourceTree = "<group>"; };
 		3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBirthdayDetailViewController.m; sourceTree = "<group>"; };
-		3B68B40E18A6F9D300F98806 /* BRBirthdayEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRBirthdayEditViewController.h; path = "user-interface/view-controllers/BRBirthdayEditViewController.h"; sourceTree = "<group>"; };
-		3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BRBirthdayEditViewController.m; path = "user-interface/view-controllers/BRBirthdayEditViewController.m"; sourceTree = "<group>"; };
+		3B68B40E18A6F9D300F98806 /* BRBirthdayEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBirthdayEditViewController.h; sourceTree = "<group>"; };
+		3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBirthdayEditViewController.m; sourceTree = "<group>"; };
+		3B718ED018A70293001C3E57 /* BRCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCoreViewController.h; sourceTree = "<group>"; };
+		3B718ED118A70293001C3E57 /* BRCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +125,6 @@
 				3B2BB33218A21304008A8F37 /* BRAppDelegate.h */,
 				3B2BB33318A21304008A8F37 /* BRAppDelegate.m */,
 				3B2BB33518A21304008A8F37 /* Main.storyboard */,
-				3B68B40E18A6F9D300F98806 /* BRBirthdayEditViewController.h */,
-				3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */,
 				3B2BB33B18A21304008A8F37 /* Images.xcassets */,
 				3B2BB32A18A21304008A8F37 /* Supporting Files */,
 			);
@@ -174,6 +175,10 @@
 				3B68B40918A621DF00F98806 /* BRHomeViewController.m */,
 				3B68B40B18A6221900F98806 /* BRBirthdayDetailViewController.h */,
 				3B68B40C18A6221900F98806 /* BRBirthdayDetailViewController.m */,
+				3B718ED018A70293001C3E57 /* BRCoreViewController.h */,
+				3B718ED118A70293001C3E57 /* BRCoreViewController.m */,
+				3B68B40E18A6F9D300F98806 /* BRBirthdayEditViewController.h */,
+				3B68B40F18A6F9D300F98806 /* BRBirthdayEditViewController.m */,
 			);
 			path = "view-controllers";
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */,
 				3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */,
 				3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */,
+				3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */,
 				3B2BB33418A21304008A8F37 /* BRAppDelegate.m in Sources */,
 				3B2BB33018A21304008A8F37 /* main.m in Sources */,
 			);

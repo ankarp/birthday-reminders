@@ -1,5 +1,5 @@
 //
-//  BRBirthdayEditViewController.h
+//  BRCoreViewController.h
 //  NewBirthdayReminder
 //
 //  Created by Jennnifer Karp on 2/8/14.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BRCoreViewController.h"
 
-@interface BRBirthdayEditViewController : BRCoreViewController
+@interface BRCoreViewController : UIViewController
 
+-(IBAction)cancelAndDismiss:(id)sender;
+-(IBAction)saveAndDismiss:(id)sender;
 @end

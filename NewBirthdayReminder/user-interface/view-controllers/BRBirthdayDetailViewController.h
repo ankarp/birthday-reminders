@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BRCoreViewController.h"
 
-@interface BRBirthdayDetailViewController : UIViewController
+@interface BRBirthdayDetailViewController : BRCoreViewController
 
 @end
