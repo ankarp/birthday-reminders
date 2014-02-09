@@ -35,4 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark UITextViewDelegate
+-(void)textViewDidChange:(UITextView *)textView
+{
+    NSLog(@"User changed thex text: %@", self.textView.text);
+}
+
 @end
