@@ -65,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUh-i0-v4S">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hUh-i0-v4S">
                                 <rect key="frame" x="68" y="85" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -136,6 +136,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="iF5-xq-1Qe" id="h8M-h6-oIM"/>
+                        <outlet property="includeYearLabel" destination="0QK-6H-ymM" id="fIw-zI-gVX"/>
+                        <outlet property="includeYearSwitch" destination="4vT-TU-YJr" id="Jlj-wO-u72"/>
+                        <outlet property="nameTextField" destination="hUh-i0-v4S" id="XnT-mN-Hmv"/>
+                        <outlet property="saveButton" destination="OAd-Zv-EwF" id="Mbc-XI-NBG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYp-RB-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +351,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5FG-6o-tc3"/>
+        <segue reference="OtV-ox-oRc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,4 +11,10 @@
 
 @interface BRBirthdayEditViewController : BRCoreViewController
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *includeYearLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *includeYearSwitch;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
 @end
