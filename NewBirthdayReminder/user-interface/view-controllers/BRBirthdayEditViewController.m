@@ -58,4 +58,16 @@
     NSLog(@"The text was changed: %@", self.nameTextField.text);
     [self updateSaveButton];
 }
+
+- (IBAction)didToggleSwitch:(UISwitch *)sender {
+    if (self.includeYearSwitch.on) {
+        NSLog(@"Sure, I'll share my age with you");
+    } else {
+        NSLog(@"I'd prefer to keep my age to myself");
+    }
+}
+
+- (IBAction)didChangeDatePicker:(UIDatePicker *)sender {
+    NSLog(@"New Birthdate selected: %@", self.datePicker.date);
+}
 @end
