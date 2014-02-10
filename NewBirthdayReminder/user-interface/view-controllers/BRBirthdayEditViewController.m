@@ -38,6 +38,19 @@
 -(void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
+    NSString *name = self.birthday[@"name"];
+    NSDate *birthdate = self.birthday[@"birthdate"];
+    UIImage *image = self.birthday[@"image"];
+
+    self.nameTextField.text = name;
+    self.datePicker.date = birthdate;
+    if (image == nil) {
+        self.photoView.image = [UIImage imageNamed:@"icon-birthday-cake.png"];
+    } else {
+        self.photoView.image = image;
+    }
+
     [self updateSaveButton];
     
 }

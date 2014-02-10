@@ -72,7 +72,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Birthday" id="lHh-tS-zkW">
                             <connections>
-                                <segue destination="ipX-L2-sVs" kind="modal" id="5FG-6o-tc3"/>
+                                <segue destination="ipX-L2-sVs" kind="modal" identifier="AddBirthday" id="5FG-6o-tc3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -505,6 +505,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="OtV-ox-oRc"/>
+        <segue reference="5FG-6o-tc3"/>
     </inferredMetricsTieBreakers>
 </document>

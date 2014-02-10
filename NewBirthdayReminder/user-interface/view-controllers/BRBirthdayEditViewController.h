@@ -24,4 +24,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *picPhotoLabel;
 - (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender;
 
+@property (nonatomic, strong) NSMutableDictionary *birthday;
+
 @end

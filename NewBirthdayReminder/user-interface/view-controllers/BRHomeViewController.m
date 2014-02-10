@@ -8,6 +8,7 @@
 
 #import "BRHomeViewController.h"
 #import "BRBirthdayDetailViewController.h"
+#import "BRBirthdayEditViewController.h"
 
 @interface BRHomeViewController ()
 
@@ -70,6 +71,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 -(IBAction)unwindBackToHomeViewController:(UIStoryboardSegue *)segue
 {
     NSLog(@"unwindBackToHomeViewController");
@@ -114,6 +121,14 @@
 
         BRBirthdayDetailViewController *birthdayDetailViewController = segue.destinationViewController;
         birthdayDetailViewController.birthday = birthday;
+    }
+    else if ([identifier isEqualToString:@"AddBirthday"]) {
+        NSMutableDictionary *birthday = [NSMutableDictionary dictionary];
+        birthday[@"name"] = @"My Friend";
+        birthday[@"birthdate"] = [NSDate date];
+        UINavigationController *navigationController = segue.destinationViewController;
+        BRBirthdayEditViewController *birthdayEditViewController = (BRBirthdayEditViewController *) navigationController.topViewController;
+        birthdayEditViewController.birthday = birthday;
     }
 }
 @end
