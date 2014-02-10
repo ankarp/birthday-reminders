@@ -257,7 +257,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" title="Birthday Detail" id="51t-RW-ogR">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="213-9t-shR">
                             <connections>
-                                <segue destination="ipX-L2-sVs" kind="modal" id="OtV-ox-oRc"/>
+                                <segue destination="ipX-L2-sVs" kind="modal" identifier="EditBirthday" id="OtV-ox-oRc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -505,6 +505,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5FG-6o-tc3"/>
+        <segue reference="OtV-ox-oRc"/>
     </inferredMetricsTieBreakers>
 </document>

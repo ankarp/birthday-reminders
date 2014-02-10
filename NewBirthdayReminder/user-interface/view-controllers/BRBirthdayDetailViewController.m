@@ -7,6 +7,7 @@
 //
 
 #import "BRBirthdayDetailViewController.h"
+#import "BRBirthdayEditViewController.h"
 
 @interface BRBirthdayDetailViewController ()
 
@@ -46,6 +47,16 @@
         self.photoView.image = [UIImage imageNamed:@"icon-birthday-cake.png"];
     } else {
         self.photoView.image = image;
+    }
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *identifier = segue.identifier;
+    if ([identifier isEqualToString:@"EditBirthday"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        BRBirthdayEditViewController *birthdayEditViewController = (BRBirthdayEditViewController *) navigationController.topViewController;
+        birthdayEditViewController.birthday = self.birthday;
     }
 }
 

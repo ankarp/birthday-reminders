@@ -69,6 +69,7 @@
 
 - (IBAction)didChangeNameText:(UITextField *)sender {
     NSLog(@"The text was changed: %@", self.nameTextField.text);
+    self.birthday[@"name"] = self.nameTextField.text;
     [self updateSaveButton];
 }
 
@@ -82,6 +83,7 @@
 
 - (IBAction)didChangeDatePicker:(UIDatePicker *)sender {
     NSLog(@"New Birthdate selected: %@", self.datePicker.date);
+    self.birthday[@"birthdate"] = self.datePicker.date;
 }
 
 - (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender {
