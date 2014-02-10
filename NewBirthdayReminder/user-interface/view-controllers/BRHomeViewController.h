@@ -10,6 +10,7 @@
 #import "BRCoreViewController.h"
 
 @interface BRHomeViewController : BRCoreViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 -(IBAction)unwindBackToHomeViewController:(UIStoryboardSegue *)segue;
 
