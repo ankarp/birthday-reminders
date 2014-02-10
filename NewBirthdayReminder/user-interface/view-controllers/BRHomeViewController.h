@@ -11,6 +11,7 @@
 
 @interface BRHomeViewController : BRCoreViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *birthdays;
 
 -(IBAction)unwindBackToHomeViewController:(UIStoryboardSegue *)segue;
 

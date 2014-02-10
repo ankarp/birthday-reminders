@@ -23,6 +23,40 @@
     return self;
 }
 
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+
+    if (self) {
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"birthdays" ofType:@"plist"];
+        NSArray *nonMutableBirthdays = [NSArray arrayWithContentsOfFile:plistPath];
+
+        self.birthdays = [NSMutableArray array];
+
+        NSMutableDictionary *birthday;
+        NSDictionary *dictionary;
+        NSString *name;
+        NSString *pic;
+        UIImage *image;
+        NSDate *birthdate;
+
+        for (int i = 0; i < [nonMutableBirthdays count]; i++) {
+            dictionary = [nonMutableBirthdays objectAtIndex:i];
+            name = dictionary[@"name"];
+            pic = dictionary[@"pic"];
+            image = [UIImage imageNamed:pic];
+            birthdate = dictionary[@"birthdate"];
+            birthday = [NSMutableDictionary dictionary];
+            birthday[@"name"] = name;
+            birthday[@"image"] = image;
+            birthday[@"birthdate"] = birthdate;
+
+            [self.birthdays addObject:birthday];
+        }
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -44,12 +78,21 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
+
+    NSMutableDictionary *birthday = self.birthdays[indexPath.row];
+    NSString *name = birthday[@"name"];
+    NSDate *birthdate = birthday[@"birthdate"];
+    UIImage *image = birthday[@"image"];
+
+    cell.textLabel.text = name;
+    cell.detailTextLabel.text = birthdate.description;
+    cell.imageView.image = image;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 100;
+    return [self.birthdays count];
 }
 
 #pragma mar UITableViewDelegate
