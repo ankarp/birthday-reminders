@@ -45,7 +45,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="JTS-F7-ZLX" kind="push" id="Jg6-s9-l2O"/>
+                                            <segue destination="JTS-F7-ZLX" kind="push" identifier="BirthdayDetail" id="Jg6-s9-l2O"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

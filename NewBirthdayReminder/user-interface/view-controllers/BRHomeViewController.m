@@ -7,6 +7,7 @@
 //
 
 #import "BRHomeViewController.h"
+#import "BRBirthdayDetailViewController.h"
 
 @interface BRHomeViewController ()
 
@@ -99,5 +100,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark Segues
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *identifier = segue.identifier;
+
+    if ([identifier isEqualToString:@"BirthdayDetail"]) {
+        NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
+        NSMutableDictionary *birthday = self.birthdays[selectedIndexPath.row];
+
+        BRBirthdayDetailViewController *birthdayDetailViewController = segue.destinationViewController;
+        birthdayDetailViewController.birthday = birthday;
+    }
 }
 @end
