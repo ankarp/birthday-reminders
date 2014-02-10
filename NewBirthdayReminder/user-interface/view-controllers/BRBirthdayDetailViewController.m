@@ -35,4 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear");
+    NSString *name = self.birthday[@"name"];
+    self.title = name;
+    UIImage *image = self.birthday[@"image"];
+    if (image == nil) {
+        self.photoView.image = [UIImage imageNamed:@"icon-birthday-cake.png"];
+    } else {
+        self.photoView.image = image;
+    }
+}
+
 @end
