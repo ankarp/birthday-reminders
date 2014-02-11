@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */; };
 		3B0AC43518AA031C0068ACF7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0AC43418AA031C0068ACF7 /* CoreData.framework */; };
+		3B0AC43918AA04150068ACF7 /* BirthdayReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B0AC43718AA04150068ACF7 /* BirthdayReminder.xcdatamodeld */; };
+		3B0AC43C18AA06060068ACF7 /* BRDBirthday.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0AC43B18AA06060068ACF7 /* BRDBirthday.m */; };
 		3B2A05C018A8333F005DAEC2 /* icon-birthday-cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */; };
 		3B2A05C118A8333F005DAEC2 /* icon-birthday-cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */; };
 		3B2A05C218A8333F005DAEC2 /* thumbnail-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */; };
@@ -59,6 +61,9 @@
 		3B062E6718A70BDC00248F4F /* BRSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingsViewController.h; sourceTree = "<group>"; };
 		3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingsViewController.m; sourceTree = "<group>"; };
 		3B0AC43418AA031C0068ACF7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3B0AC43818AA04150068ACF7 /* BirthdayReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayReminder.xcdatamodel; sourceTree = "<group>"; };
+		3B0AC43A18AA06060068ACF7 /* BRDBirthday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDBirthday.h; sourceTree = "<group>"; };
+		3B0AC43B18AA06060068ACF7 /* BRDBirthday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDBirthday.m; sourceTree = "<group>"; };
 		3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake.png"; sourceTree = "<group>"; };
 		3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background.png"; sourceTree = "<group>"; };
@@ -130,6 +135,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0AC43618AA03BD0068ACF7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				3B0AC43718AA04150068ACF7 /* BirthdayReminder.xcdatamodeld */,
+				3B0AC43A18AA06060068ACF7 /* BRDBirthday.h */,
+				3B0AC43B18AA06060068ACF7 /* BRDBirthday.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		3B2A05BA18A8333F005DAEC2 /* resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +219,7 @@
 		3B2BB32918A21304008A8F37 /* NewBirthdayReminder */ = {
 			isa = PBXGroup;
 			children = (
+				3B0AC43618AA03BD0068ACF7 /* data */,
 				3B68B40618A6219100F98806 /* user-interface */,
 				3B2BB33218A21304008A8F37 /* BRAppDelegate.h */,
 				3B2BB33318A21304008A8F37 /* BRAppDelegate.m */,
@@ -387,9 +403,11 @@
 			files = (
 				3B68B40A18A621DF00F98806 /* BRHomeViewController.m in Sources */,
 				3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */,
+				3B0AC43918AA04150068ACF7 /* BirthdayReminder.xcdatamodeld in Sources */,
 				3B34C6C018A724AD004EA46A /* BRNotificationTimeViewController.m in Sources */,
 				3B68B41018A6F9D300F98806 /* BRBirthdayEditViewController.m in Sources */,
 				3B68B40D18A6221900F98806 /* BRBirthdayDetailViewController.m in Sources */,
+				3B0AC43C18AA06060068ACF7 /* BRDBirthday.m in Sources */,
 				3B718ED218A70293001C3E57 /* BRCoreViewController.m in Sources */,
 				3B718ED518A70958001C3E57 /* BRNotesEditViewController.m in Sources */,
 				3B2BB33418A21304008A8F37 /* BRAppDelegate.m in Sources */,
@@ -614,6 +632,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B0AC43718AA04150068ACF7 /* BirthdayReminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B0AC43818AA04150068ACF7 /* BirthdayReminder.xcdatamodel */,
+			);
+			currentVersion = 3B0AC43818AA04150068ACF7 /* BirthdayReminder.xcdatamodel */;
+			path = BirthdayReminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B2BB31818A21304008A8F37 /* Project object */;
 }
