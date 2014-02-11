@@ -25,4 +25,11 @@
 @property (nonatomic, retain) NSString * picURL;
 @property (nonatomic, retain) NSString * uid;
 
+@property (nonatomic, readonly) int remainingDaysUntilNextBirthday;
+@property (nonatomic, readonly) NSString *birthdayTextToDisplay;
+@property (nonatomic, readonly) BOOL isBirthdayToday;
+
+-(void)updateNextBirthdayAndAge;
+-(void)updateWithDefaults;
+
 @end
