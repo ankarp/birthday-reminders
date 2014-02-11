@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B062E6918A70BDC00248F4F /* BRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */; };
+		3B0AC43518AA031C0068ACF7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0AC43418AA031C0068ACF7 /* CoreData.framework */; };
 		3B2A05C018A8333F005DAEC2 /* icon-birthday-cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */; };
 		3B2A05C118A8333F005DAEC2 /* icon-birthday-cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */; };
 		3B2A05C218A8333F005DAEC2 /* thumbnail-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		3B062E6718A70BDC00248F4F /* BRSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingsViewController.h; sourceTree = "<group>"; };
 		3B062E6818A70BDC00248F4F /* BRSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingsViewController.m; sourceTree = "<group>"; };
+		3B0AC43418AA031C0068ACF7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake.png"; sourceTree = "<group>"; };
 		3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background.png"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0AC43518AA031C0068ACF7 /* CoreData.framework in Frameworks */,
 				3B2BB32618A21304008A8F37 /* CoreGraphics.framework in Frameworks */,
 				3B2BB32818A21304008A8F37 /* UIKit.framework in Frameworks */,
 				3B2BB32418A21304008A8F37 /* Foundation.framework in Frameworks */,
@@ -189,6 +192,7 @@
 		3B2BB32218A21304008A8F37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B0AC43418AA031C0068ACF7 /* CoreData.framework */,
 				3B2BB32318A21304008A8F37 /* Foundation.framework */,
 				3B2BB32518A21304008A8F37 /* CoreGraphics.framework */,
 				3B2BB32718A21304008A8F37 /* UIKit.framework */,
