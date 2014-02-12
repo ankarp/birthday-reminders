@@ -30,6 +30,7 @@ static BRDModel *_sharedInstance = nil;
     }
 
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    NSLog(@"coordinator: %@", coordinator);
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
         [_managedObjectContext setPersistentStoreCoordinator:coordinator];
@@ -42,8 +43,16 @@ static BRDModel *_sharedInstance = nil;
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"NewBirthdayReminder" withExtension:@"momd"];
+
+    // NOTE IMPORTANT: resource has to match base of .xcdatamodeld file
+    // ALSO: if created project without Core Data enabled, then MUST:
+    // 1. choose .xcdatamodel file
+    // 2. Editor->Add Model Version->[Create]
+    // (this resulted in creation of "BirthdayReminder 2.xcdatamodel" file, and then it all worked.
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"BirthdayReminder" withExtension:@"momd"];
+    NSLog(@"modelURL: %@", modelURL);
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    NSLog(@"returning mangedObjectModel: %@", _managedObjectContext);
     return _managedObjectModel;
 }
 

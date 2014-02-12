@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BRCoreViewController.h"
 
-@interface BRHomeViewController : BRCoreViewController <UITableViewDelegate, UITableViewDataSource>
+@interface BRHomeViewController : BRCoreViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *birthdays;
 

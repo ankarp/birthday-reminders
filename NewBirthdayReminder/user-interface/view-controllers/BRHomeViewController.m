@@ -9,8 +9,12 @@
 #import "BRHomeViewController.h"
 #import "BRBirthdayDetailViewController.h"
 #import "BRBirthdayEditViewController.h"
+#import "BRDBirthday.h"
+#import "BRDModel.h"
 
 @interface BRHomeViewController ()
+
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController; // should this go to the header??
 
 @end
 
@@ -87,20 +91,18 @@
 {
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
-    NSMutableDictionary *birthday = self.birthdays[indexPath.row];
-    NSString *name = birthday[@"name"];
-    NSDate *birthdate = birthday[@"birthdate"];
-    UIImage *image = birthday[@"image"];
+    BRDBirthday *birthday = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
-    cell.textLabel.text = name;
-    cell.detailTextLabel.text = birthdate.description;
-    cell.imageView.image = image;
+    cell.textLabel.text = birthday.name;
+    cell.detailTextLabel.text = birthday.birthdayTextToDisplay;
+    cell.imageView.image = [UIImage imageWithData:birthday.imageData];
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.birthdays count];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
 }
 
 #pragma mar UITableViewDelegate
@@ -130,5 +132,43 @@
         BRBirthdayEditViewController *birthdayEditViewController = (BRBirthdayEditViewController *) navigationController.topViewController;
         birthdayEditViewController.birthday = birthday;
     }
+}
+
+#pragma mark Fetched Results Controller to keep track of the Core Data BRDBirthday managed objects
+
+-(NSFetchedResultsController *)fetchedResultsController
+{
+    if (_fetchedResultsController == nil) {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+
+        // access the single managed object context through model singleton
+        NSManagedObjectContext *context = [BRDModel sharedInstance].managedObjectContext;
+
+        //fetch request requires an entity description - we're only interested in BRDBirthday managed objects
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"BRDBirthday" inManagedObjectContext:context];
+        fetchRequest.entity = entity;
+
+        // we'll order the BRDBirthday objects in name sort order for now
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"nextBirthday" ascending:YES];
+        NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+        fetchRequest.sortDescriptors = sortDescriptors;
+
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+        self.fetchedResultsController.delegate = self;
+        NSError *error = nil;
+        if (![self.fetchedResultsController performFetch:&error]) {
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
+    }
+
+    return _fetchedResultsController;
+}
+
+#pragma mark NSFetchedResultsControllerDelegate
+
+-(void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+    // the fetched results changed.
 }
 @end

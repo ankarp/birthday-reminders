@@ -67,6 +67,7 @@
 		3B0AC43B18AA06060068ACF7 /* BRDBirthday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDBirthday.m; sourceTree = "<group>"; };
 		3B0B5E6718AB4C1E00D537C0 /* BRDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDModel.h; sourceTree = "<group>"; };
 		3B0B5E6818AB4C1E00D537C0 /* BRDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDModel.m; sourceTree = "<group>"; };
+		3B0B5E6A18AB634200D537C0 /* BirthdayReminder 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BirthdayReminder 2.xcdatamodel"; sourceTree = "<group>"; };
 		3B2A05BC18A8333F005DAEC2 /* icon-birthday-cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake.png"; sourceTree = "<group>"; };
 		3B2A05BD18A8333F005DAEC2 /* icon-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		3B2A05BE18A8333F005DAEC2 /* thumbnail-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail-background.png"; sourceTree = "<group>"; };
@@ -643,6 +644,7 @@
 		3B0AC43718AA04150068ACF7 /* BirthdayReminder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				3B0B5E6A18AB634200D537C0 /* BirthdayReminder 2.xcdatamodel */,
 				3B0AC43818AA04150068ACF7 /* BirthdayReminder.xcdatamodel */,
 			);
 			currentVersion = 3B0AC43818AA04150068ACF7 /* BirthdayReminder.xcdatamodel */;
