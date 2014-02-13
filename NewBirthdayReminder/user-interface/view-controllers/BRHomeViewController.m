@@ -37,28 +37,36 @@
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"birthdays" ofType:@"plist"];
         NSArray *nonMutableBirthdays = [NSArray arrayWithContentsOfFile:plistPath];
 
-        self.birthdays = [NSMutableArray array];
-
-        NSMutableDictionary *birthday;
+        BRDBirthday *birthday;
         NSDictionary *dictionary;
         NSString *name;
         NSString *pic;
-        UIImage *image;
+        NSString *pathForPic;
+        NSData *imageData;
         NSDate *birthdate;
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+
+        NSManagedObjectContext *context = [BRDModel sharedInstance].managedObjectContext;
 
         for (int i = 0; i < [nonMutableBirthdays count]; i++) {
-            dictionary = [nonMutableBirthdays objectAtIndex:i];
+            dictionary = nonMutableBirthdays[i];
+
+            birthday = [NSEntityDescription insertNewObjectForEntityForName:@"BRDBirthday" inManagedObjectContext:context];
+
             name = dictionary[@"name"];
             pic = dictionary[@"pic"];
-            image = [UIImage imageNamed:pic];
             birthdate = dictionary[@"birthdate"];
-            birthday = [NSMutableDictionary dictionary];
-            birthday[@"name"] = name;
-            birthday[@"image"] = image;
-            birthday[@"birthdate"] = birthdate;
-
-            [self.birthdays addObject:birthday];
+            pathForPic = [[NSBundle mainBundle] pathForResource:pic ofType:nil];
+            imageData = [NSData dataWithContentsOfFile:pathForPic];
+            birthday.name = name;
+            birthday.imageData = imageData;
+            NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:birthdate];
+            birthday.birthDay = @(components.day);
+            birthday.birthMonth = @(components.month);
+            birthday.birthYear = @(components.year);
+            [birthday updateNextBirthdayAndAge];
         }
+        [[BRDModel sharedInstance] saveChanges];
     }
     return self;
 }

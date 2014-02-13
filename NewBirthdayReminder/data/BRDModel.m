@@ -73,6 +73,18 @@ static BRDModel *_sharedInstance = nil;
     return _persistentStoreCoordinator;
 }
 
+-(void)saveChanges
+{
+    NSError *error = nil;
+    if ([self.managedObjectContext hasChanges]) {
+        if (![self.managedObjectContext save:&error]) {
+            NSLog(@"Save failed: %@", [error localizedDescription]);
+        } else {
+            NSLog(@"Save succeded");
+        }
+    }
+}
+
 #pragma mark - Application's Documents directory
 - (NSURL *)applicationDocumentsDirectory
 {
