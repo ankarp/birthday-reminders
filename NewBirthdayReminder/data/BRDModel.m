@@ -7,6 +7,7 @@
 //
 
 #import "BRDModel.h"
+#import "BRDBirthday.h"
 
 @implementation BRDModel
 
@@ -84,6 +85,50 @@ static BRDModel *_sharedInstance = nil;
         }
     }
 }
+
+-(NSMutableDictionary *)getExistingBirthdatsWithUIDs:(NSArray *)uids
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSManagedObjectContext *context = self.managedObjectContext;
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uid IN %@", uids];
+    fetchRequest.predicate = predicate;
+
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"BRDBirthday" inManagedObjectContext:context];
+    fetchRequest.entity = entity;
+
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"uid" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    fetchRequest.sortDescriptors = sortDescriptors;
+
+    NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+
+    NSError *error = nil;
+    if (![fetchedResultsController performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+
+    NSArray *fetchedObjects = fetchedResultsController.fetchedObjects;
+
+    NSInteger resultCount = [fetchedObjects count];
+
+    if (resultCount == 0) {
+        return [NSMutableDictionary dictionary];
+    }
+
+    BRDBirthday *birthday;
+    NSMutableDictionary *tmpDict = [NSMutableDictionary dictionary];
+    int i;
+
+    for (i = 0; i < resultCount; i++) {
+        birthday = fetchedObjects[i];
+        tmpDict[birthday.uid] = birthday;
+    }
+
+    return tmpDict;
+}
+
 
 #pragma mark - Application's Documents directory
 - (NSURL *)applicationDocumentsDirectory

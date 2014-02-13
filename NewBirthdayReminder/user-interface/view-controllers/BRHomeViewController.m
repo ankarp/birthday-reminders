@@ -46,12 +46,26 @@
         NSDate *birthdate;
         NSCalendar *calendar = [NSCalendar currentCalendar];
 
+        NSString *uid;
+        NSMutableArray *uids = [NSMutableArray array];
+        for (int i = 0; i < [nonMutableBirthdays count]; i++) {
+            dictionary = [nonMutableBirthdays objectAtIndex:i];
+            uid = dictionary[@"name"];
+            [uids addObject:uid];
+        }
+        NSMutableDictionary *existingEntities = [[BRDModel sharedInstance] getExistingBirthdatsWithUIDs:uids];
+
         NSManagedObjectContext *context = [BRDModel sharedInstance].managedObjectContext;
 
         for (int i = 0; i < [nonMutableBirthdays count]; i++) {
             dictionary = nonMutableBirthdays[i];
-
-            birthday = [NSEntityDescription insertNewObjectForEntityForName:@"BRDBirthday" inManagedObjectContext:context];
+            uid = dictionary[@"name"];
+            birthday = existingEntities[uid];
+            if (! birthday) {
+                birthday = [NSEntityDescription insertNewObjectForEntityForName:@"BRDBirthday" inManagedObjectContext:context];
+                existingEntities[uid] = birthday;
+                birthday.uid = uid;
+            }
 
             name = dictionary[@"name"];
             pic = dictionary[@"pic"];
