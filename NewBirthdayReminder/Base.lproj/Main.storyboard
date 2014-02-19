@@ -24,7 +24,7 @@
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Szt-Lm-KJa" detailTextLabel="nOc-7j-xuV" style="IBUITableViewCellStyleSubtitle" id="GNa-Py-wrz">
                                         <rect key="frame" x="0.0" y="86" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GNa-Py-wrz">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GNa-Py-wrz" id="vbG-eB-RyS">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
